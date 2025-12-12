@@ -119,4 +119,3 @@ function fooz_enqueue_librairies() {
 }
 add_action('wp_enqueue_scripts', 'fooz_enqueue_librairies');
 
-?>
