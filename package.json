@@ -1,0 +1,11 @@
+{
+    "name": "project-fooz",
+    "version": "1.0.0",
+    "scripts": {
+        "css-compile": "sass --style=compressed ./public/wp-content/themes/project-fooz/assets/scss/main.scss:./public/wp-content/themes/project-fooz/style.css",
+        "css-watch": "sass --watch --style=compressed ./public/wp-content/themes/project-fooz/assets/scss/main.scss:./public/wp-content/themes/project-fooz/style.css",
+    },
+    "dependencies": {
+        "sass": "^1.96.0"
+    }
+}
