@@ -1,0 +1,26 @@
+/****************************************
+            BLOCKS - FAQ
+****************************************/
+
+.fooz-faq {
+    $accordion-button-active-color: $danger;
+    $accordion-button-active-bg: transparent;
+
+    @import "../../../../../../../node_modules/bootstrap/scss/transitions";
+    @import "../../../../../../../node_modules/bootstrap/scss/accordion";
+
+    counter-reset: faq;
+
+    .accordion-item {
+        counter-increment: faq;
+    }
+
+    .accordion-button {
+        font-weight: 700;
+
+        &::before {
+            content: counter(faq) ".";
+            margin-right: .25rem;
+        }
+    }
+}

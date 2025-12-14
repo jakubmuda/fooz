@@ -9,43 +9,47 @@
 
 
 // Variables & mixins
-// @use "partials/variables";
-// @use "mixins/general";
-// @use "mixins/pages";
+// @import "partials/variables";
+// @import "mixins/general";
+// @import "mixins/pages";
 
 
 // Bootstrap 5
-// @use "../../../../../../node_modules/bootstrap/scss/functions";
-// @use "../../../../../../node_modules/bootstrap/scss/variables";
-// @use "../../../../../../node_modules/bootstrap/scss/variables-dark";
-// @use "../../../../../../node_modules/bootstrap/scss/maps";
-// @use "../../../../../../node_modules/bootstrap/scss/mixins";
-// @use "../../../../../../node_modules/bootstrap/scss/vendor/rfs";
+@import "../../../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../../../node_modules/bootstrap/scss/variables-dark";
+@import "../../../../../../node_modules/bootstrap/scss/maps";
+@import "../../../../../../node_modules/bootstrap/scss/vendor/rfs";
 
 
 // Vendor
-// @use "vendor/";
+// @import "vendor/";
 
 
 // Partials
-@use "partials/root";
-// @use "partials/override-bootstrap";
-// @use "partials/layout";
-// @use "partials/header";
-// @use "partials/footer";
+@import "partials/root";
+// @import "partials/override-bootstrap";
+// @import "partials/layout";
+// @import "partials/header";
+// @import "partials/footer";
+
+
+// Blocks
+@import "blocks/faq";
 
 
 // Elements
-// @use "elements/";
+// @import "elements/";
 
 
 // Pages
-// @use "pages/home";
+// @import "pages/home";
 
 
 // Widgets
-// @use "widgets/";
+// @import "widgets/";
 
 
 // Plugins
-// @use "plugins/";
+// @import "plugins/";
