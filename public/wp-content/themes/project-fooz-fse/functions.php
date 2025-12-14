@@ -86,6 +86,11 @@ function fooz_app_init() {
         ],
 	]);
 
+
+    // REGISTER BLOCKS
+    register_block_type(__DIR__ . '/blocks/faq');
+    register_block_type(__DIR__ . '/blocks/faq-item');
+
 }
 add_action('init', 'fooz_app_init');
 
