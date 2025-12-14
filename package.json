@@ -2,10 +2,17 @@
     "name": "project-fooz",
     "version": "1.0.0",
     "scripts": {
-        "css-compile": "sass --style=compressed ./public/wp-content/themes/project-fooz/assets/scss/main.scss:./public/wp-content/themes/project-fooz/style.css",
-        "css-watch": "sass --watch --style=compressed ./public/wp-content/themes/project-fooz/assets/scss/main.scss:./public/wp-content/themes/project-fooz/style.css"
+        "build": "npm run css-compile && npm run block:faq:build && npm run block:faqItem:build",
+        "css-compile": "sass --style=compressed ./public/wp-content/themes/project-fooz-fse/assets/scss/main.scss:./public/wp-content/themes/project-fooz-fse/style.css",
+        "css-watch": "sass --watch --style=compressed ./public/wp-content/themes/project-fooz-fse/assets/scss/main.scss:./public/wp-content/themes/project-fooz-fse/style.css",
+        "block:faq:build": "wp-scripts build ./public/wp-content/themes/project-fooz-fse/blocks/faq/src/index.js --output-path=./public/wp-content/themes/project-fooz-fse/blocks/faq/build",
+        "block:faq:start": "wp-scripts start ./public/wp-content/themes/project-fooz-fse/blocks/faq/src/index.js --output-path=./public/wp-content/themes/project-fooz-fse/blocks/faq/build",
+        "block:faqItem:build": "wp-scripts build ./public/wp-content/themes/project-fooz-fse/blocks/faq-item/src/index.js --output-path=./public/wp-content/themes/project-fooz-fse/blocks/faq-item/build",
+        "block:faqItem:start": "wp-scripts start ./public/wp-content/themes/project-fooz-fse/blocks/faq-item/src/index.js --output-path=./public/wp-content/themes/project-fooz-fse/blocks/faq-item/build"
     },
     "dependencies": {
+        "@wordpress/scripts": "^31.1.0",
+        "bootstrap": "^5.3.8",
         "sass": "^1.96.0"
     }
 }

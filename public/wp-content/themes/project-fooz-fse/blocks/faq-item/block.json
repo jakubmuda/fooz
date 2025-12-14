@@ -1,0 +1,27 @@
+{
+    "apiVersion": 2,
+    "name": "fooz/faq-item",
+    "title": "FAQ Item",
+    "category": "widgets",
+    "icon": "editor-help",
+    "description": "Single FAQ accordion item.",
+    "parent": [ "fooz/faq" ],
+    "supports": {
+        "html": false,
+        "reusable": false
+    },
+    "attributes": {
+        "uid": {
+            "type": "string"
+        },
+        "question": {
+            "type": "string",
+            "default": ""
+        },
+        "answer": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "editorScript": "file:./build/index.js"
+}

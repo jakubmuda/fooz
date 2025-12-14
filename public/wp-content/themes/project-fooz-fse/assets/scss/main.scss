@@ -1,0 +1,55 @@
+// project-fooz
+/*!
+    Theme Name: Twenty Twenty-Five Child FSE
+    Template: twentytwentyfive
+*/
+
+// Configuration
+@use "sass:math";
+
+
+// Variables & mixins
+// @import "partials/variables";
+// @import "mixins/general";
+// @import "mixins/pages";
+
+
+// Bootstrap 5
+@import "../../../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../../../node_modules/bootstrap/scss/variables-dark";
+@import "../../../../../../node_modules/bootstrap/scss/maps";
+@import "../../../../../../node_modules/bootstrap/scss/vendor/rfs";
+
+
+// Vendor
+// @import "vendor/";
+
+
+// Partials
+@import "partials/root";
+// @import "partials/override-bootstrap";
+// @import "partials/layout";
+// @import "partials/header";
+// @import "partials/footer";
+
+
+// Blocks
+@import "blocks/faq";
+
+
+// Elements
+// @import "elements/";
+
+
+// Pages
+// @import "pages/home";
+
+
+// Widgets
+// @import "widgets/";
+
+
+// Plugins
+// @import "plugins/";

@@ -1,0 +1,17 @@
+{
+    "apiVersion": 2,
+    "name": "fooz/faq",
+    "title": "FAQ Accordion",
+    "category": "widgets",
+    "icon": "editor-help",
+    "supports": {
+        "html": false
+    },
+    "attributes": {
+        "heading": {
+            "type": "string",
+            "default": "Frequently Asked Questions"
+        }
+    },
+    "editorScript": "file:./build/index.js"
+}

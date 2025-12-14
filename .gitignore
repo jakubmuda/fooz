@@ -1,4 +1,13 @@
 
+### CUSTOM ###
+!/public/wp-config-sample.php
+/public/wp-content/plugins/*
+/public/wp-content/themes/*/style.css
+/public/wp-content/themes/*/style.css.map
+/public/wp-content/themes/*/blocks/*/build/*
+!/public/wp-content/themes/*/blocks/*/build/.gitkeep
+
+
 ### Composer ###
 composer.phar
 /vendor/
@@ -7,8 +16,55 @@ composer.phar
 # You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
 # composer.lock
 
+
 ### npm ###
 /node_modules/
+
+
+### WordPress ###
+# Core
+#
+# Note: if you want to stage/commit WP core files
+# you can delete this whole section/until Configuration.
+/public/wp-admin/
+/public/wp-content/index.php
+/public/wp-content/languages
+/public/wp-content/themes/index.php
+/public/wp-includes/
+/public/index.php
+/public/license.txt
+/public/readme.html
+/public/wp-*.php
+/public/xmlrpc.php
+
+# Configuration
+wp-config.php
+
+# Example themes
+/public/wp-content/themes/twenty*/
+
+# Example plugin
+/public/wp-content/plugins/hello.php
+
+# Uploads
+/public/wp-content/uploads/
+
+# Log files
+*.log
+
+# htaccess
+# /public/.htaccess
+
+# All plugins
+# Note: If you wish to whitelist plugins,
+# uncomment the next line
+#/public/wp-content/plugins
+
+# All themes
+# Note: If you wish to whitelist themes,
+# uncomment the next line
+#/public/wp-content/themes
+
 
 ### macOS ###
 # General
@@ -39,9 +95,11 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+
 ### macOS Patch ###
 # iCloud generated files
 *.icloud
+
 
 ### VisualStudioCode ###
 .vscode/*
@@ -57,10 +115,12 @@ Temporary Items
 # Built Visual Studio Code Extensions
 *.vsix
 
+
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
 .ionide
+
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -87,51 +147,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-### WordPress ###
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/public/wp-admin/
-/public/wp-content/index.php
-/public/wp-content/languages
-/public/wp-content/plugins/*
-/public/wp-content/themes/index.php
-/public/wp-content/themes/*/style.css
-/public/wp-content/themes/*/style.css.map
-/public/wp-includes/
-/public/index.php
-/public/license.txt
-/public/readme.html
-/public/wp-*.php
-/public/xmlrpc.php
-!/public/wp-config-sample.php
-
-# Configuration
-wp-config.php
-
-# Example themes
-/public/wp-content/themes/twenty*/
-
-# Example plugin
-/public/wp-content/plugins/hello.php
-
-# Uploads
-/public/wp-content/uploads/
-
-# Log files
-*.log
-
-# htaccess
-# /public/.htaccess
-
-# All plugins
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/public/wp-content/plugins
-
-# All themes
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/public/wp-content/themes
