@@ -119,7 +119,7 @@ function fooz_enqueue_librairies() {
     wp_enqueue_style('main', get_stylesheet_directory_uri() . '/style.css', []);
 
     // SCRIPT
-    wp_enqueue_script('main', get_stylesheet_directory_uri() . '/assets/js/scripts.js', ['bootstrap'], time(), true);
+    wp_enqueue_script('main', get_stylesheet_directory_uri() . '/assets/js/scripts.js', ['bootstrap'], false, true);
 
     wp_localize_script('main', 'foozAjax', [
         'ajaxUrl'   => admin_url('admin-ajax.php'),
