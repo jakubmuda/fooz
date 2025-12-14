@@ -182,7 +182,9 @@ add_shortcode('fooz_related_books', function () {
 });
 
 
-
+/**
+ * Set limit to 5 books for genre
+ */
 add_action('pre_get_posts', function (WP_Query $query) {
 
     if (
