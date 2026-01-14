@@ -13,11 +13,16 @@ abstract class AbstractBlock
 
     final public function register_block(): void
     {
-        register_block_type($this->get_path());
+        register_block_type(
+            $this->get_type(),
+            $this->get_args()
+        );
     }
 
-    protected function get_path(): string
+    protected function get_type(): string
     {
         return self::BLOCKS_DIR . '/' . static::BLOCK;
     }
+
+    abstract protected function get_args(): array;
 }
