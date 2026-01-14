@@ -4,6 +4,8 @@ namespace Fooz\Taxonomy;
 
 abstract class AbstractTaxonomy
 {
+    protected const TAXONOMY = '__TAXONOMY_NOT_SET__';
+
     final public function register(): void
     {
         add_action('init', [$this, 'register_taxonomy']);

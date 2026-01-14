@@ -5,9 +5,9 @@ namespace Fooz\PostType;
 use Fooz\PostType\PostTypes;
 use Fooz\TextDomains;
 
-class Books extends AbstractPostType
+final class Books extends AbstractPostType
 {
-    public const POST_TYPE = PostTypes::BOOKS;
+    protected const POST_TYPE = PostTypes::BOOKS;
 
     protected function get_args(): array
     {

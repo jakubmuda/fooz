@@ -4,6 +4,7 @@ namespace Fooz\Block;
 
 abstract class AbstractBlock
 {
+    protected const BLOCK = '__BLOCK_NOT_SET__';
     protected const BLOCKS_DIR = __DIR__ . '/../../blocks';
 
     final public function register(): void

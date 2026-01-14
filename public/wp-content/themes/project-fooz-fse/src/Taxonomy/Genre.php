@@ -6,9 +6,9 @@ use Fooz\PostType\PostTypes;
 use Fooz\Taxonomy\Taxonomies;
 use Fooz\TextDomains;
 
-class Genre extends AbstractTaxonomy
+final class Genre extends AbstractTaxonomy
 {
-    public const TAXONOMY = Taxonomies::GENRE;
+    protected const TAXONOMY = Taxonomies::GENRE;
 
     protected function get_object_types(): array|string
     {

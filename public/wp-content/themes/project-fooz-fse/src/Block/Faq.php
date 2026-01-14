@@ -4,9 +4,9 @@ namespace Fooz\Block;
 
 use Fooz\Block\Blocks;
 
-class Faq extends AbstractBlock
+final class Faq extends AbstractBlock
 {
-    public const BLOCK = Blocks::FAQ;
+    protected const BLOCK = Blocks::FAQ;
 
     protected function get_args(): array
     {

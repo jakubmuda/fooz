@@ -4,6 +4,8 @@ namespace Fooz\PostType;
 
 abstract class AbstractPostType
 {
+    protected const POST_TYPE = '__POST_TYPE_NOT_SET__';
+    
     final public function register(): void
     {
         add_action('init', [$this, 'register_post_type']);
