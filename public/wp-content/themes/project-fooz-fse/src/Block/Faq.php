@@ -2,9 +2,11 @@
 
 namespace Fooz\Block;
 
+use Fooz\Blocks\Blocks;
+
 class Faq extends AbstractBlock
 {
-    public const BLOCK = 'faq';
+    public const BLOCK = Blocks::FAQ;
 
     protected function get_args(): array
     {
