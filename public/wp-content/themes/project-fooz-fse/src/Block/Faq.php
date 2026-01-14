@@ -2,7 +2,7 @@
 
 namespace Fooz\Block;
 
-use Fooz\Blocks\Blocks;
+use Fooz\Block\Blocks;
 
 class Faq extends AbstractBlock
 {

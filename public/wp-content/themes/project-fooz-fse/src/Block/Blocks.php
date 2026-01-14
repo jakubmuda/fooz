@@ -1,6 +1,6 @@
 <?php
 
-namespace Fooz\Blocks;
+namespace Fooz\Block;
 
 final class Blocks
 {
