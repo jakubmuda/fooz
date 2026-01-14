@@ -2,15 +2,16 @@
 
 namespace Fooz\Taxonomy;
 
-use Fooz\PostType\Books;
+use Fooz\PostType\PostTypes;
+use Fooz\Taxonomy\Taxonomies;
 
 class Genre extends AbstractTaxonomy
 {
-    public const TAXONOMY = 'genre';
+    public const TAXONOMY = Taxonomies::GENRE;
 
-    protected function get_object_types(): array
+    protected function get_object_types(): array|string
     {
-        return [Books::POST_TYPE];
+        return PostTypes::BOOKS;
     }
 
     protected function get_args(): array

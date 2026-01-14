@@ -18,7 +18,7 @@ abstract class AbstractTaxonomy
         );
     }
 
-    abstract protected function get_object_types(): array;
+    abstract protected function get_object_types(): array|string;
 
     abstract protected function get_args(): array;
 }
