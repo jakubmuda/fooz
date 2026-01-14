@@ -6,7 +6,7 @@ use Fooz\PostType\PostTypes;
 
 class Books extends AbstractPostType
 {
-    protected string $post_type = PostTypes::BOOKS;
+    public const POST_TYPE = PostTypes::BOOKS;
 
     protected function get_args(): array
     {
