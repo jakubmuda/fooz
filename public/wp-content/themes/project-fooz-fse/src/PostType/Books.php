@@ -2,9 +2,11 @@
 
 namespace Fooz\PostType;
 
+use Fooz\PostType\PostTypes;
+
 class Books extends AbstractPostType
 {
-    public const POST_TYPE = 'books';
+    protected string $post_type = PostTypes::BOOKS;
 
     protected function get_args(): array
     {
