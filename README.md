@@ -13,6 +13,7 @@ WordPress child theme based on Twenty Twenty-Five with custom styling and a cust
 
 - Node.js (LTS)
 - npm
+- Composer
 
 ---
 
@@ -20,6 +21,7 @@ WordPress child theme based on Twenty Twenty-Five with custom styling and a cust
 
 1. Run `npm install`
 2. Run `npm run build` (compiles SCSS and builds Gutenberg blocks)
+3. Run `composer install`
 
 ---
 
