@@ -15,12 +15,12 @@
 
 
 // Bootstrap 5
-@import "../../../../../../node_modules/bootstrap/scss/functions";
-@import "../../../../../../node_modules/bootstrap/scss/mixins";
-@import "../../../../../../node_modules/bootstrap/scss/variables";
-@import "../../../../../../node_modules/bootstrap/scss/variables-dark";
-@import "../../../../../../node_modules/bootstrap/scss/maps";
-@import "../../../../../../node_modules/bootstrap/scss/vendor/rfs";
+// @import "../../../../../../node_modules/bootstrap/scss/functions";
+// @import "../../../../../../node_modules/bootstrap/scss/mixins";
+// @import "../../../../../../node_modules/bootstrap/scss/variables";
+// @import "../../../../../../node_modules/bootstrap/scss/variables-dark";
+// @import "../../../../../../node_modules/bootstrap/scss/maps";
+// @import "../../../../../../node_modules/bootstrap/scss/vendor/rfs";
 
 
 // Vendor
@@ -30,9 +30,9 @@
 // Partials
 @import "partials/root";
 // @import "partials/override-bootstrap";
-// @import "partials/layout";
-// @import "partials/header";
-// @import "partials/footer";
+@import "partials/layout";
+@import "partials/header";
+@import "partials/footer";
 
 
 // Blocks
@@ -40,7 +40,7 @@
 
 
 // Elements
-// @import "elements/";
+@import "elements/transitions";
 
 
 // Pages
