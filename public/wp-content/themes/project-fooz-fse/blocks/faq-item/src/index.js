@@ -1,6 +1,7 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { RichText, useBlockProps } from '@wordpress/block-editor';
 import { useEffect } from '@wordpress/element';
+import { v4 as uuidv4 } from 'uuid';
 
 registerBlockType('fooz/faq-item', {
     parent: ['fooz/faq'],
@@ -10,7 +11,7 @@ registerBlockType('fooz/faq-item', {
         useEffect(() => {
             if (!uid) {
                 setAttributes({
-                    uid: Date.now().toString()
+                    uid: `my-custom-id-${uuidv4().slice(0, 8)}`
                 });
             }
         }, [uid]);
