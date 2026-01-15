@@ -13,6 +13,7 @@
     "dependencies": {
         "@wordpress/scripts": "^31.1.0",
         "bootstrap": "^5.3.8",
-        "sass": "^1.96.0"
+        "sass": "^1.96.0",
+        "uuid": "^13.0.0"
     }
 }
